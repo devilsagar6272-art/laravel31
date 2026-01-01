@@ -12,3 +12,4 @@ use App\Http\Controllers\usercontrollers;
 |
 */
 Route::get('/welcome',[usercontrollers::class,'insert'])->name('insert');
+Route::get('/trait',[usercontrollers::class,'trait'])->name('trait');

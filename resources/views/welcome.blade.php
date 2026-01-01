@@ -14,11 +14,9 @@ class het extends sagagag1
     {
        $this->amoute = $amoute;
     } 
-       
     public function pay()
     {
         echo $this->amoute;
-    
     }
 }
 $obj = new het(1111111500);
@@ -45,3 +43,4 @@ class AsClass  implements gautam,bansi
 $obj = new AsClass();
 $obj->get();
 $obj->getc();
+

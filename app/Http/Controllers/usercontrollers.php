@@ -10,4 +10,8 @@ class usercontrollers extends Controller
     {
         return view('welcome');
     }
+    function trait()
+    {
+        return view('trait');
+    }
 }
