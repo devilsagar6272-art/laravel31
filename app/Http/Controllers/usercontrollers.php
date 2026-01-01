@@ -18,4 +18,8 @@ class usercontrollers extends Controller
     {
         return view('methodoverring');
     }
+    function interface()
+    {
+        return view('interface');
+    }
 }

@@ -1,4 +1,4 @@
-<?php
+methodoverring<?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontrollers;
 /*
@@ -14,3 +14,4 @@ use App\Http\Controllers\usercontrollers;
 Route::get('/welcome',[usercontrollers::class,'insert'])->name('insert');
 Route::get('/trait',[usercontrollers::class,'trait'])->name('trait');
 Route::get('/methodoverring',[usercontrollers::class,'methodoverring'])->name('methodoverring');
+Route::get('/interface',[usercontrollers::class,'interface'])->name('interface');
