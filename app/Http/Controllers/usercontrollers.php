@@ -14,4 +14,8 @@ class usercontrollers extends Controller
     {
         return view('trait');
     }
+    function methodoverring()
+    {
+        return view('methodoverring');
+    }
 }
