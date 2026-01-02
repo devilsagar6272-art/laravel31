@@ -16,3 +16,4 @@ Route::get('/trait',[usercontrollers::class,'trait'])->name('trait');
 Route::get('/methodoverring',[usercontrollers::class,'methodoverring'])->name('methodoverring');
 Route::get('/interface',[usercontrollers::class,'interface'])->name('interface');
 Route::get('/insert',[usercontrollers::class,'insert'])->name('insert');
+Route::post('/insert',[usercontrollers::class,'insert'])->name('insert');

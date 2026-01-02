@@ -22,16 +22,14 @@ class usercontrollers extends Controller
     {
         return view('interface');
     }
-    function insert()
+    function insert(Request $request)
 {
-    usermodel::create([
-        'name'  => 'tuutuutut',
-        'email' => 'sajjsjjkdskjkjdsj'
+     $data = usermodel::create([
+      'name' => $request->name,
+      'email' => $request->email    
     ]);
-
     $data = usermodel::all();
-
-    return view('insert', compact('data'));
+    return view('insert',compact('data'));
 }
 
 }
