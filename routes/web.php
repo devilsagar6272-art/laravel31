@@ -1,4 +1,4 @@
-methodoverring<?php
+<?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontrollers;
 /*
@@ -11,7 +11,8 @@ use App\Http\Controllers\usercontrollers;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/welcome',[usercontrollers::class,'insert'])->name('insert');
+Route::get('/abtract',[usercontrollers::class,'abtract'])->name('abtract');
 Route::get('/trait',[usercontrollers::class,'trait'])->name('trait');
 Route::get('/methodoverring',[usercontrollers::class,'methodoverring'])->name('methodoverring');
 Route::get('/interface',[usercontrollers::class,'interface'])->name('interface');
+Route::get('/insert',[usercontrollers::class,'insert'])->name('insert');

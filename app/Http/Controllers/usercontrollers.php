@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\usermodel;
 use Illuminate\Http\Request;
 
 class usercontrollers extends Controller
 {
-    function insert()
+    function abtract()
     {
         return view('welcome');
     }
@@ -22,4 +22,16 @@ class usercontrollers extends Controller
     {
         return view('interface');
     }
+    function insert()
+{
+    usermodel::create([
+        'name'  => 'tuutuutut',
+        'email' => 'sajjsjjkdskjkjdsj'
+    ]);
+
+    $data = usermodel::all();
+
+    return view('insert', compact('data'));
+}
+
 }
