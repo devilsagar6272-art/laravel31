@@ -20,12 +20,36 @@ class usercontrollers extends Controller
     {
         return view('interface');
     }
-    function insert(Request $request)
-    {
-        $data = usermodel::create([
-        'name' => 'uyiuiyu',
-        'email' => 'iuouuijfghfdds'
-        ]);
-        dd($data);
-    }
+    public function store(Request $request)
+{
+    usermodel::create([
+        'name'  => $request->name,
+        'email' => $request->email,
+    ]);
+
+    return redirect()->back();
+}
+public function index()
+{
+    $users = usermodel::all();
+    return view('users.index', compact('users'));
+}
+public function update(Request $request, $id)
+{
+    $user = usermodel::findOrFail($id);
+
+    $user->update([
+        'name'  => $request->name,
+        'email' => $request->email,
+    ]);
+
+    return redirect()->back();
+}
+    public function destroy($id)
+{
+    usermodel::findOrFail($id)->delete();
+    return redirect()->back();
+}
+
+
 }
