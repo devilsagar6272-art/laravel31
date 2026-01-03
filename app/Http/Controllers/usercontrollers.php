@@ -1,9 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
 use App\Models\usermodel;
 use Illuminate\Http\Request;
-
 class usercontrollers extends Controller
 {
     function abtract()
@@ -23,13 +21,11 @@ class usercontrollers extends Controller
         return view('interface');
     }
     function insert(Request $request)
-{
-     $data = usermodel::create([
-      'name' => $request->name,
-      'email' => $request->email    
-    ]);
-    $data = usermodel::all();
-    return view('insert',compact('data'));
-}
-
+    {
+        $data = usermodel::create([
+        'name' => 'uyiuiyu',
+        'email' => 'iuouuijfghfdds'
+        ]);
+        dd($data);
+    }
 }
