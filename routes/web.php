@@ -20,4 +20,4 @@ Route::post('/users', [usercontrollers::class, 'store']);
 Route::get('/users', [usercontrollers::class, 'index']);
 Route::put('/users/{id}', [userController::class, 'update']);
 Route::delete('/users/{id}', [userController::class, 'destroy']);
-
+Route::get('topic',[usercontrollers::class,'topic'])->name('topic');

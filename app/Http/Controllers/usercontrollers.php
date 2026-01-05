@@ -50,6 +50,8 @@ public function update(Request $request, $id)
     usermodel::findOrFail($id)->delete();
     return redirect()->back();
 }
-
-
+function topic()
+    {
+        return view('topic');
+    }
 }
