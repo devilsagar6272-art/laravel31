@@ -1,0 +1,55 @@
+arithmetic operator
++
+-
+*
+%
+/
+assimment
++=
+-=
+/=
+*=
+%=
+logic operator
+and
+or
+not
+array operator
++
+<=
+>=
+tenary operator
+?:
+??
+relationship operator
+==
+!=
+>=
+<=
+===
+!==
+<=>
+>
+<
+string operator
+.=
+.
+array operator 
++
+==
+===
+!=
+!==
+<>
+bitwise operator
+&   
+| 
+~ 
+^ 
+<< 
+>>
+type operator
+instanceof
+
+
+

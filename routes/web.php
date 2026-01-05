@@ -18,6 +18,6 @@ Route::get('/interface',[usercontrollers::class,'interface'])->name('interface')
 Route::get('/insert',[usercontrollers::class,'insert'])->name('insert');
 Route::post('/users', [usercontrollers::class, 'store']);
 Route::get('/users', [usercontrollers::class, 'index']);
-Route::put('/users/{id}', [userController::class, 'update']);
-Route::delete('/users/{id}', [userController::class, 'destroy']);
+Route::put('/users/{id}', [usercontroller::class, 'update']);
+Route::delete('/users/{id}', [usercontroller::class, 'destroy']);
 Route::get('topic',[usercontrollers::class,'topic'])->name('topic');
