@@ -1,0 +1,7 @@
+//basic earning 
+function index($a,$b)
+{ 
+    return $a+$b;
+}
+//call function
+echo index(10 + 20);
