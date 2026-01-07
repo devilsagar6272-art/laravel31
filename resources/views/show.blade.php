@@ -79,18 +79,18 @@ foreach($objs as $obj)
 {
   $obj->sound();
 }*/
-class hetvi
+class hatvi 
 {
-  private $a;
-  function setvalue($a)
+  private $sagar;
+  function setvalue($sagar)
   {
-    $this->a = $a;
+    $this->sagar = $sagar;
   }
   function getvalue()
   {
-    return $this->a;
+    return $this->sagar;
   }
 }
-$obj = new hetvi();
-$obj->setvalue('sagar');
-echo $obj->getvalue();
+$obj = new hatvi();
+$obj->setvalue('safagfddfgdff');
+echo $obj->getvalue(); 
