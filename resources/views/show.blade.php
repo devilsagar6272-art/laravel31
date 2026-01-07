@@ -51,7 +51,7 @@ class het extends show
   } 
 } 
 $obj = new het('sagar');
-$obj->sagar();*/
+$obj->sagar();
 class animal
 {
   function sound()
@@ -78,4 +78,19 @@ $objs = [new dog(),new cat()];
 foreach($objs as $obj)
 {
   $obj->sound();
+}*/
+class hetvi
+{
+  private $a;
+  function setvalue($a)
+  {
+    $this->a = $a;
+  }
+  function getvalue()
+  {
+    return $this->a;
+  }
 }
+$obj = new hetvi();
+$obj->setvalue('sagar');
+echo $obj->getvalue();
