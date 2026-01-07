@@ -21,3 +21,5 @@ Route::get('/users', [usercontrollers::class, 'index']);
 Route::put('/users/{id}', [usercontroller::class, 'update']);
 Route::delete('/users/{id}', [usercontroller::class, 'destroy']);
 Route::get('topic',[usercontrollers::class,'topic'])->name('topic');
+Route::get('/answer',[usercontrollers::class,'giveme'])->name('answer');
+Route::get('show',[usercontrollers::class,'show'])->name('show');
