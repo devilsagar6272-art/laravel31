@@ -10,10 +10,10 @@ private $balance = 10000;
  {
     if($amoute > 0 && $amoute <= $this -> balance)
     {
-     $this->balance -= $amoute;
+       $this->balance -= $amoute;
     }
  }
 }
 $obj = new het();
-$obj->drawble(700);
+$obj->drawble(700); 
 echo $obj->getvlaue();
