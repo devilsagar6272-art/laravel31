@@ -19,7 +19,6 @@ abstract class show{
   }  
     abstract public function sagar();
 }
-
 class het extends show
 {
   function sagar() 
@@ -79,7 +78,7 @@ foreach($objs as $obj)
 {
   $obj->sound();
 }*/
-class hatvi 
+/*class hatvi 
 {
   private $sagar;
   function setvalue($sagar)
@@ -93,4 +92,68 @@ class hatvi
 }
 $obj = new hatvi();
 $obj->setvalue('safagfddfgdff');
-echo $obj->getvalue(); 
+echo $obj->getvalue(); */
+class animal
+{
+  public function sound()
+  {
+    echo "animal sound";
+  } 
+}
+class dog extends animal
+{
+  public function sound()
+  {
+    //echo "perk";
+    $a=1;
+    while($a <= 10)
+    {
+      
+      $b=10;
+      while($b > $a)
+      {
+        echo "&nbsp;&nbsp;";
+        $b--;
+      }
+      $c=1;
+      while($c <= (2*$a-1))
+      {
+        echo "*";
+        $c++;
+      }
+      echo "<br>";
+      $a++;
+    }
+    $a=10;
+    while($a >= 1)
+    {
+      
+      $b=10;
+      while($b > $a)
+      {
+        echo "&nbsp;&nbsp;";
+        $b--;
+      }
+      $c=1;
+      while($c <= (2*$a-1))
+      {
+        echo "*";
+        $c++;
+      }
+      echo "<br>";
+      $a--;
+    }
+  }
+}
+class cat extends animal
+{
+  public function sound()
+  {
+    echo "meow";
+  } 
+}
+$objs = [new dog(),new cat()];
+foreach($objs as $obj)
+{
+  $obj->sound();
+}

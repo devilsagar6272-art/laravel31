@@ -23,3 +23,4 @@ Route::delete('/users/{id}', [usercontroller::class, 'destroy']);
 Route::get('topic',[usercontrollers::class,'topic'])->name('topic');
 Route::get('/answer',[usercontrollers::class,'giveme'])->name('answer');
 Route::get('show',[usercontrollers::class,'show'])->name('show');
+Route::get('/Encapsulation',[usercontrollers::class,'Encapsulation'])->name('Encapsulation');

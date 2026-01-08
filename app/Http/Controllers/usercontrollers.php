@@ -63,6 +63,10 @@ function show()
 {
     return view('show');
 }
+function Encapsulation()
+{
+  return view('Encapsulation');
+}
 }
 
 
