@@ -15,7 +15,7 @@ trait geeta
 {
   function one()
   {
-    echo "1243567890";
+    echo "1243567890";+
   }
 }
 class het{
@@ -27,12 +27,12 @@ class het1 extends het
 }
 $obj = new het1('a');
 $obj->one();*/
-class Name
+/*class Name
 {
   public $value;
   function __construct(string $value)
   {
-     $this->value =$value;   
+     $this->value = $value;   
   }
 }
 abstract class sagar1{
@@ -52,7 +52,7 @@ class geeta extends sagar1
 } 
 $name = new Name('sagar');
 $obj = new geeta($name);
-$obj->intro();
+$obj->intro();*/
 /*class animal
 {
   public function sound()
@@ -120,3 +120,26 @@ class sagar1 implements game,mega
 $obj = new sagar1();
 $obj->name();
 $obj->mega();*/
+class Name
+{
+  public $value;
+  function __construct($value)
+  {
+    $this ->value = $value;
+  }
+}
+class sagar1
+{
+   protected Name $name;
+  function __construct(Name $name)
+  {
+    $this->name = $name;
+  }
+  function intro()
+  {
+    echo $this->name->value;
+  }
+}
+$objs = new Name('sagar');
+$obj = new sagar1($objs);
+echo $obj->intro();
