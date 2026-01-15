@@ -1,0 +1,58 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<p class="item">item</p>
+<p class="item">item</p>
+<p class="item">item</p>
+<span id="sagar">click</span>
+<span id="sagar1">click2</span>
+<span id="sagar2">click2</span>
+<span id="sagar3">click2</span>
+<span id="sagar4">oppyp</span>
+<script>
+$(document).ready(function(){
+$(".item").click(function() 
+{
+ $(this).css("color","red");
+});
+  $("#sagar").click(function()
+  {
+    alert("mouse click huva kya");
+  });
+  $("#sagar1").dblclick(function()
+  {
+    alert("double mouse click huva kya");
+  });
+  $("#sagar2").mouseenter(function()
+  {
+    alert("mouseenter mouse click huva kya");
+  });
+  $("#sagar3").mouseleave(function() 
+  {
+    alert("mouseleave mouse click huva kya");
+  });
+    $("#sagar4").mousedown(function(){  
+    alert("mouseleave mouse click huva kya");
+  }); 
+  $(windows).click('scroll',function(){
+  });
+});
+$.get('/get',function(data){
+console.log(data);
+});
+$('#form').on('submit',function(e){
+  e.preventDefault();
+  $.post('/insert',$(this).serialize(),function(data){
+    console.log(data);
+  });
+});
+$.ajax({
+  url:"",
+  type:"",
+  data:"",
+  success:function()
+  {},
+  error:function()
+  {},
+  error:function()
+  {}
+});
+</script>
